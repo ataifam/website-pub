@@ -1,0 +1,59 @@
+{% extends "main/base.html" %}
+{% block title %} Projects {% endblock title%}
+
+{% block body %}
+<div class="bottom-container">
+
+    <center>
+        <h1>Projects</h1>
+        <hr width="94%">
+    </center>
+
+    <div id="project-display">
+        <div class="project_panels">
+            <center>
+                <h3>Connectify!</h3>
+            </center>
+            <ul>
+                <li>LinkedIn Inspired Social Media Website</li>
+                <li>Django, Python, SQLite, Bootstrap</li>
+                <li>
+                    Developing this clone provided me with an opportunity to practice implementing basic CRUD operations,
+                    making queries using Django's object oriented database, and ensuring a dynamic user experience using the templating language.
+                </li>
+            </ul>
+            <center><a href="{% url 'social:register' %}"><button>Go</button></a></center>
+        </div>
+
+        <div class="project_panels">
+            <center>
+                <h3>Hang Man Game</h3>
+            </center>
+            <ul>
+                <li>Front-end Minigame</li>
+                <li>GitHub Pages, HTML, CSS, React.js</li>
+                <li>
+                    After learning the fundamentals of Javascript, I wanted to add a layer of abstraction and experiment
+                    with React.
+                    So I developed this quick game which gave me an introduction into declarative programming and React.
+                </li>
+            </ul>
+            <center><a href="https://ataifam.github.io"><button>Go</button></center></a>
+        </div>
+
+        <div class="project_panels">
+            <center>
+                <h3>University Projects</h3>
+            </center>
+            <ul>
+                <li>Programs developed in accordance with specifications</li>
+                <li>Java programming language</li>
+                <li>Programs demonstrate my implementation of object-oriented design, multithreading, event-driven
+                    programming, and data structure design to solve real-world problems.</li>
+                <li>Made available upon request to ensure compliance with University academic integrity policies.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

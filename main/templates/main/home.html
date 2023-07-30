@@ -1,0 +1,65 @@
+{% extends "main/base.html" %}
+{% block title %} Home {% endblock %}
+{% block body %}
+{% load static %}
+<div class="top-container">
+    
+    <div class="header">
+        <center>
+        <div class="intro">
+            <h1>Adam Taifouri</h1>
+        </div>
+        <div class="middle">
+            <h2>University of Maryland, College Park</h2>
+            <h2>Computer Science</h2>
+        </div>
+        <div class="end">
+            <h4>Class of 2026</h4>
+            <a href="mailto:iiadamx@gmail.com"><img class="icons" src="{% static 'main/images/gmail.png' %}"></a>
+            <a href="https://www.linkedin.com/in/adam-taifouri-860748185/"><img class="icons"
+                    src="{% static 'main/images/linkedin.png' %}"></a>
+            <a href="https://github.com/ataifam"><img class="icons" src="{% static 'main/images/github.png' %}"></a>
+            <h5>Making an impact through programming.</h5>
+        </div>
+        </center>
+   </div>
+    <img id="slideHolder" src="" />
+    
+</div>
+<div class="bottom-container">
+    <div id="bottom-content">
+        <div id="interests">
+            <div id="bottom-container-list">
+                <div id="interestList" align="center">
+                    <ul class="rectangle-list">
+                        <li class="interests" id="tech">Tech</li>
+                        <li class="interests" id="advocacy">Advocacy</li>
+                        <li class="interests" id="govt">Government</li>
+                        <li class="interests" id="wrestling">Sports</li>
+                        <li class="interests" id="dydx">Math</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="onHoverPictures">
+                <img id="interest" src="{% static 'main/images/wrestling.png' %}" height="300px" width="400px">
+            </div>
+            <div id="moreInfo" class="infoText">
+                text here
+            </div>
+        </div>
+        <div class="home_panels">
+            <center>
+                <h1>About Me</h1>
+                <p>My name is Adam. I am a Computer Science student, studying at the University of Maryland.</p>
+                <br>
+                <p>Through this website, you can access my resume, projects, and contact me via the contact page!</p>
+                <br>
+                <p>I've always loved puzzles. As I encountered new and more complicated ones, I found Computer
+                    Science to be a useful and fascinating tool to solve them.</p>
+            </center>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

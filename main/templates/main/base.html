@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{% endblock %}</title>
+    <script type="text/javascript" src="{% static 'main/script.js' %}" integrity="sha384-o7ahzSMnfXzJVT5J3Gs8s63278CiH7l2DIFhmx6sUiKPOw+WtnC5TqBVuXCKBCnX" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'main/style.css' %}" integrity="sha384-QHALu8ZxN7dep5ukyeAy1VSvlGvcSxoLXr3tTKAjrnbcYw6D5WwSoMxdvDmtCm3n" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="menucategory">
+        <div id="menu1" class="menu"><a href="{% url 'main:home' %}">
+                <h3><span>HOME</span></h3>
+            </a>
+        </div>
+        <div id="menu2" class="menu"><a href="{% url 'main:resume' %}">
+                <h3><span>RESUME</span></h3>
+            </a>
+        </div>
+        <div id="menu3" class="menu"><a href="{% url 'main:projects' %}">
+                <h3><span>PROJECTS</span></h3>
+            </a>
+        </div>
+        <div id="menu4" class="menu"><a href="{% url 'main:contact' %}">
+                <h3><span>CONTACT</span></h3>
+            </a>
+        </div>
+        {% block body %} {% endblock body %}
+        <div class="footer">
+            <p> </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

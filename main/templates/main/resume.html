@@ -1,0 +1,81 @@
+{% extends "main/base.html" %}
+{% block title %} Resume {% endblock title%}
+{% load static %}
+
+{% block body %}
+
+<br>
+<div class="bottom-container">
+    <div class="resume_header">
+        <div>
+            <img id="resume_pic" src="{% static 'main/images/resume_pic1.png' %}">
+        </div>
+        <div id="resume_bio">
+            <center>
+                <h1>Hi, my name is Adam!</h1>
+                <p>I am a Computer Science student,
+                    interested in Software Development and Cybersecurity!
+                </p>
+                <img class="lang_icons" src="{% static 'main/images/python.png' %}">
+                <img class="lang_icons" src="{% static 'main/images/java.png' %}">
+                <img class="lang_icons" src="{% static 'main/images/js.png' %}">
+                <br>
+        </div>
+    </div>
+    <div class="resume_bottom">
+        <h2>Awards
+            <hr width="96%">
+        </h2>
+        <div id="resume_awards">
+            <div>Anne Arundel County Executive Youth Leader Award</div>
+            <div>City of Annapolis Community Leadership Citation</div>
+        </div>
+
+        <h2>Clubs
+            <hr width="96%">
+        </h2>
+        <div id="resume_clubs">
+            <div>Google Developer Student Club</div>
+            <div>UMD Cybersecurity Club</div>
+        </div>
+
+        <h2>Experiences
+            <hr width="96%">
+        </h2>
+        <div id="resume_exp">
+            <div>
+                <div>
+                    <h2>Community Assistant</h2>
+                    <span>University of Maryland, ResLife</span>
+                </div>
+                <ul>
+                    <li>Served as first point-of-contact for residents, staff, and visitors to acquire campus resources,
+                        support, and emergency assistance</li>
+                    <li>establish community through socializing with residents, advising them on ResLife policies, and
+                        assisting in the preparation of hall activities</li>
+                    <li>perform administrative tasks relating to community keys and packages, such as audits and
+                        distribution</li>
+                    <li>process lock-core-changes, activation and deactivation of keys, notify residents of new packages
+                        and important deadlines</li>
+                    <li>securing sensitive information of residents and access to community buildings from unauthorized
+                        persons</li>
+                </ul>
+            </div>
+            <div>
+                <div>
+                    <h2>County Executive's Intern</h2>
+                    <span>Anne Arundel County Government</span>
+                </div>
+                <ul>
+                    <li>Planned, organized, and executed youth engagement events sponsored by the county government</li>
+                    <li>led communications and assisted constituents with inquiries related to the Office of Special
+                        Projects</li>
+                    <li>prepared correspondence</li>
+                    <li>managed, updated, and organized government program databases</li>
+                    <li>co-organized and co-starred in a AACO Health youth vaccination campaign</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

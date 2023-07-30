@@ -1,0 +1,439 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #F5F5Fa;
+    font-family: Georgia;
+}
+
+.top-container {
+    background-color: black;
+    color: #F5F5Fa;
+    height: 600px;
+    width: 100%;
+    padding-top: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.header {
+    width: 40%;
+}
+
+.bottom-container {
+    background-color: whitesmoke;
+    color: #F5F5Fa;
+    height: 860px;
+    width: 100%;
+}
+
+#project-display {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#bottom-content {
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    opacity: 0%;
+    animation-name: fade-in;
+    animation-duration: 2s;
+    animation-play-state: paused;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.home_panels {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: whitesmoke;
+    border-radius: 10%;
+    width: 40%;
+    border-width: 1px;
+    color: black;
+}
+
+.form_panel {
+    width: 40%;
+    border: 2px solid black;
+    margin: 5%;
+    padding: 3%;
+}
+
+#contact-form {
+    display: flex;
+    flex-flow: column;
+}
+
+.project_panels {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: whitesmoke;
+    border-radius: 100px / 50%;
+    border-width: 1px;
+    width: 40%;
+    margin: 2%;
+    padding: 1%;
+    color: black;
+}
+
+#interests {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#slideHolder {
+    height: 95%;
+    width: 40%;
+    justify-content: center;
+}
+
+.icons {
+    width: 3.5%;
+    padding: 1%
+}
+
+.lang_icons {
+    width: 6%;
+    padding: 3%;
+    padding-top: 0%;
+}
+
+#onHoverPictures {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 4%;
+}
+
+.rectangle-list {
+    border-radius: 50px / 50%;
+    border: 2px solid;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 5%;
+}
+
+.rectangle-list li {
+    color: skyblue;
+    height: 25px;
+    width: 105px;
+}
+
+.rectangle-list li:hover {
+    border-radius: 10px / 50%;
+    background-color: skyblue;
+    color: whitesmoke;
+    transition: all .3s ease-out;
+}
+
+a {
+    border-radius: 10px / 50%;
+    color: #F5F5Fa;
+    text-decoration: none;
+}
+
+h1 {
+    color: skyblue;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+h2 {
+    color: skyblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h4 {
+    color: #F5F5Fa;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    color: black;
+}
+
+.resume_header {
+    padding-top: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: baseline;
+    height: 400px;
+    width: 100%;
+}
+
+.resume_header p {
+    color: dodgerblue;
+    font-size: larger;
+}
+
+.resume_bottom {
+    height: 770px;
+    width: 100%;
+
+}
+
+.resume_bottom h2 {
+    color: dodgerblue;
+    text-indent: 2%;
+}
+
+#resume_pic {
+    height: 300px;
+    width: 285px;
+    -webkit-animation: spin 1s linear normal;
+    -moz-animation: spin 1s linear normal;
+    animation: spin 1s linear normal;
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        width: 0px;
+        height: 0px;
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        width: 285px;
+        height: 300px;
+    }
+}
+
+button {
+    transition: all .5s ease;
+    color: dodgerblue;
+    border: 2px solid dodgerblue;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    font-size: 12px;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+button:hover {
+    color: white;
+    border: 3px solid whitesmoke;
+    background-color: dodgerblue;
+}
+
+#resume_bio {
+    margin-top: 3%;
+    color: black;
+    height: 325px;
+    width: 615px;
+
+}
+
+#resume_awards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#resume_awards>div {
+    width: 215px;
+    height: 100px;
+    padding-top: 2%;
+    border: 5px solid goldenrod;
+    color: dodgerblue;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 50px/40px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#resume_clubs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#resume_clubs>div {
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    color: dodgerblue;
+    padding-top: 2%;
+    font-weight: bold;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#resume_exp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#resume_exp>div {
+    width: 600px;
+    height: 300px;
+    color: black;
+    text-indent: 1%;
+    border-radius: 8%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#resume_exp>div h2 {
+    display: inline-block;
+    text-indent: 0%;
+    color: dodgerblue
+}
+
+#resume_exp>div span {
+    margin-left: 20px;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: small;
+}
+
+#menucategory {
+    background-color: black;
+    color: #F5F5Fa;
+    height: 7%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+label {
+    cursor: pointer;
+}
+
+.menu {
+    transition: all .3s ease-out;
+    float: inline-start;
+    padding: 0% 9.5% 0% 9.5%;
+    cursor: default;
+}
+
+.menu:hover {
+    background-color: cyan;
+    border-radius: 30px / 50%;
+}
+
+.menu:hover a {
+    color: black;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+
+}
+
+.intro {
+    padding-top: 5%;
+    opacity: 0%;
+    animation-name: fade-in;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.middle {
+    opacity: 0%;
+    animation-name: fade-in;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.end {
+    opacity: 0%;
+    animation-name: fade-in;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.form-textarea {
+    resize: none;
+    border-radius: 30px / 50%;
+    text-align: center;
+}
+
+#moreInfo {
+    visibility: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.infoText {
+    background-color: lightblue;
+    padding: 2%;
+    border: 1px solid black;
+    justify-content: center;
+    border-radius: 30px / 50%;
+    max-width: 30rem;
+
+    font-weight: bold;
+    color: darkcyan;
+
+    opacity: 0%;
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: #F5F5Fa;
+    text-align: center;
+}

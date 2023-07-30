@@ -1,0 +1,33 @@
+{% extends "main/base.html" %}
+{% block title %} Contact {% endblock %}
+
+{% block body %}
+
+{% if responded == False %}
+
+{% if messages %}
+{% for message in messages %}
+<div class="alert alert-warning" role="alert">
+    {{message}}
+</div>
+{% endfor %}
+{% endif %}
+
+<div class="bottom-container">
+    <center>
+        <h1>Contact me!</h1>
+        <hr width="94%">
+        <div class="home_panels form_panel">
+            <form action="{% url 'main:contact' %}" method="post" id="contact-form">
+                {% csrf_token %}
+                {{ form }}
+                <br>
+                <input type="submit">
+            </form>
+    </center>
+</div>
+{% else %}
+<h1 id="contact-form">Thank you for reaching out, {{name}}. We will be in touch!</h1>
+{% endif %}
+</div>
+{% endblock %}
