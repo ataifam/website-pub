@@ -30,7 +30,7 @@ SECRET_KEY = str(os.environ.get('SECRET_KEY'))
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['adamswebserver', "localhost", "127.0.0.1"]
+ALLOWED_HOSTS = ['ataifou1projects']
 
 
 # Application definition
@@ -192,7 +192,7 @@ CSP_INCLUDE_NONCE_IN = [
 ]
 
 CORS_ORIGIN_WHITELIST = [
-'https://adamswebserver-0750d8ec9309.herokuapp.com',
+'https://www.ataifou1projects.com',
 ]
 
 django_on_heroku.settings(locals(), staticfiles=False)
