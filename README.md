@@ -1,3 +1,4 @@
+www.ataifou1projects.com
 Personal Website
 
 Website built using the Django Python web framework, displaying my education, interests, extracurricular activities, and my resume.
